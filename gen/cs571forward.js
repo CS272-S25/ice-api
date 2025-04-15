@@ -26,3 +26,5 @@ fetch("https://cs571api.cs.wisc.edu/rest/auth/generate-bids", {
 })
 .then(res => console.log("Sent BIDs; received HTTP Status " + res.status));
 
+// SELECT *  FROM BadgerIds WHERE createdAt >= NOW() - INTERVAL 10 MINUTE;
+
