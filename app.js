@@ -60,8 +60,8 @@ app.use(bodyParser.json());
 app.set('trust proxy', 1);
 const limiter = rateLimit({
     windowMs: 30 * 1000, // 30 seconds
-    max: 15, // limit each IP to 15 requests per windowMs (30 seconds)
-    keyGenerator: (req, _) => req.header('X-CS272-ID') ?? Math.random().toString() // throttle on X-CS272-ID, fallback
+    max: 15, // limit each id to 15 requests per windowMs (30 seconds)
+    keyGenerator: (req, _) => req.header('Authorization') ?? Math.random().toString() // throttle on X-CS272-ID, fallback
 });
 app.use(limiter);
 
