@@ -115,6 +115,12 @@ app.post("/rest/s25/hw10/ai", async (req, res) => {
     }
 });
 
+app.get("/rest/s25/ice/courses-slow", (req, res) => {
+    setTimeout(() => {
+        res.status(200).send(COURSES);
+    }, 1000)
+});
+
 app.get("/rest/s25/ice/courses", (req, res) => {
     res.status(200).set('Cache-control', 'public, max-age=60').send(COURSES);
 });
