@@ -63,7 +63,7 @@ If your request is too long, the following `413` will be sent...
 
 ```json
 {
-	"msg": "The request body is too long for the given context window."
+    "msg": "The request body is too long for the given context window."
 }
 ```
 
@@ -71,6 +71,6 @@ If you make too many requests in a short period of time, the following `429` wil
 
 ```json
 {
-	"msg": "Too many requests, please try again later."
+    "msg": "Too many requests, please try again later."
 }
 ```
