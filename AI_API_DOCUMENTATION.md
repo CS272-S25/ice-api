@@ -29,7 +29,7 @@ You must request an AI completion with a list of message objects, each containin
 ```json
 {
     "Content-Type": "application/json",
-	"Authorization": "Bearer YOUR_AUTH_TOKEN"
+    "Authorization": "Bearer YOUR_AUTH_TOKEN"
 }
 ```
 
